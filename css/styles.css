@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import "reset.css"; /*html에 link로 해주는 거랑 다른건가? 같은거임 ㅇㅇ 훨씬 간편*/
+@import "status-bar.css";
+@import "variable.css"
+
+body {
+    font-family:'Quicksand', sans-serif;
+}
+
+.welcome-header {
+    margin: 90px 0px; /*왜 145px이지..나만 다르게 나와...*/
+    text-align: center;
+    display: flex;
+    flex-direction: column; /*1자로 놓고 싶으니까*/
+    align-items: center;
+    font-weight: 600; /*semi-bold*/
+}
+
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 50%;
+    opacity: 0.7;
+    margin-bottom: ;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input{
+    padding: 15px 15px ;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3) ;
+    font-size: 18px;
+    margin-bottom: 25px;
+    transition: border-color .3s ease-in-out;
+}
+
+#login-form input ::placeholder{
+    color: rgba(0,0,0,0.4);
+}
+
+/*로긴폼이라는 id를 가진 form 안에만 적용되게*/
+
+#login-form input:focus{
+    /*border-color: rgba(0,0,0,0.4);*/
+    border-color: var(--yellow);
+}
